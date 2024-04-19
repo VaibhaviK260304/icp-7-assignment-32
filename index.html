@@ -11,13 +11,16 @@
     -> In c and c++ array is a collection of similar datatype.<br/>
     <h1>PUSH AND POP CONCEPT IN (these are inbuild functions.)</h1>
     -> push() : Insert from end.<br/>
-    -> pop() : Remove from end.<br/>
+    -> pop() : Remove from end.<br/><hr/>
     <h1>SHIFT AND UNSHIFT OPERATIONS</h1>
     -> unshift() : Inserting the elments in the starting of the array a[0].<br/>
-    ->  shift() : Removing the elments in the starting of the array a[0].<br/>
+    ->  shift() : Removing the elments in the starting of the array a[0].<br/><hr/>
     <h1>MORE METHODS</h1>
     -> indexOf() : It finds the index of the element. and if we try to find the index of element which is not present in the array then it gives -1 index value.<br/>
-    -> splice<b>(index, no. of elements to delete, elements to insert)</b> : 
+    -> splice<b>(index, no. of elements to delete, elements to insert)</b><br/>
+    -> includes() : It checks the element entered is present in the array or not, if present then it returns true else returns false value.<br/>
+    -> join() : 
+    -> Array.isArray() : To check the variable declared is an array.
 
     <script>
         const fruits = ["Apple","banana","carrot"];
@@ -34,6 +37,13 @@
         console.log('splice:',fruits);
         fruits.splice(2,0,"kiwi","jamun","carrot","Mango")
         console.log('splice:',fruits);
+        fruits.includes("Apple");
+        console.log(fruits.includes("Apple"));
+        console.log(fruits.includes("guava"));
+        console.log(typeof fruits);
+        console.log(Array.isArray(fruits));
+
+        
     </script>
 </body>
 </html>
