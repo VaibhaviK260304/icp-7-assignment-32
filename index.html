@@ -17,7 +17,7 @@
     ->  shift() : Removing the elments in the starting of the array a[0].<br/>
     <h1>MORE METHODS</h1>
     -> indexOf() : It finds the index of the element. and if we try to find the index of element which is not present in the array then it gives -1 index value.<br/>
-    -> 
+    -> splice<b>(index, no. of elements to delete, elements to insert)</b> : 
 
     <script>
         const fruits = ["Apple","banana","carrot"];
@@ -30,7 +30,10 @@
         console.log('After push',fruits);
         fruits.pop();
         console.log('After pop',fruits);
-
+        fruits.splice(2,2,"kiwi","jamun")
+        console.log('splice:',fruits);
+        fruits.splice(2,0,"kiwi","jamun","carrot","Mango")
+        console.log('splice:',fruits);
     </script>
 </body>
 </html>
