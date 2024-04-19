@@ -19,31 +19,39 @@
     -> indexOf() : It finds the index of the element. and if we try to find the index of element which is not present in the array then it gives -1 index value.<br/>
     -> splice<b>(index, no. of elements to delete, elements to insert)</b><br/>
     -> includes() : It checks the element entered is present in the array or not, if present then it returns true else returns false value.<br/>
-    -> join() : 
-    -> Array.isArray() : To check the variable declared is an array.
+    -> join() : Used to convert the type of the array to string.<br/>
+    -> Array.isArray() : To check the variable declared is an array.<br/>
+    -> reverse() : prints the array elements in reverse order.<br/>
+    -> sort() : prints the array in alphabetically sorted manner.<br/>
+    ->sort().reverse() : prints the array in reverse alphabetically sorted manner.<br/>
 
     <script>
-        const fruits = ["Apple","banana","carrot"];
+        const fruits = ["Apple","Banana","Carrot"];
         console.log('Before push:',fruits);
         fruits.push("Mango");
         console.log('After push',fruits);
         fruits.pop();
         console.log('After pop',fruits);
-        fruits.push("Mango","watermelon","grapes");
+        fruits.push("Mango","Watermelon","Grapes");
         console.log('After push',fruits);
         fruits.pop();
         console.log('After pop',fruits);
-        fruits.splice(2,2,"kiwi","jamun")
+        fruits.splice(2,2,"Kiwi","Jamun")
         console.log('splice:',fruits);
-        fruits.splice(2,0,"kiwi","jamun","carrot","Mango")
+        fruits.splice(2,0,"Kiwi","Jamun","Carrot","Mango")
         console.log('splice:',fruits);
         fruits.includes("Apple");
         console.log(fruits.includes("Apple"));
-        console.log(fruits.includes("guava"));
+        console.log(fruits.includes("Guava"));
         console.log(typeof fruits);
         console.log(Array.isArray(fruits));
+        console.log('reverse',fruits.reverse());
+        console.log('sort in alphabetical order',fruits.sort());
+        console.log('sort in reverse order',fruits.sort().reverse());
+        console.log(fruits.join());
+        let allfruits = fruits.join("-");
+        console.log(allfruits);
 
-        
     </script>
 </body>
 </html>
